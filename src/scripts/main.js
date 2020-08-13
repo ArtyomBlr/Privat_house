@@ -5,7 +5,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (documentWidth.clientWidth <= 950) {
     SliderModule.initSlider('#slider', 1, 1);
-  } else if (documentWidth.clientWidth > 950) {
-    SliderModule.initSlider('#slider', 3, 3);
   }
 });

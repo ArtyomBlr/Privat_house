@@ -8,18 +8,14 @@
     overflow: hidden;
 
     &-buttons {
-      position: absolute;
-      top: 25%;
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-
-      @include content-width-m {
-        top: 20%;
-      }
+      display: none;
 
       @include content-width-s {
+        position: absolute;
         top: 35%;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
       }
 
       @include tablet-width-half {
@@ -71,7 +67,7 @@
 
   .carousel {
     display: flex;
-    margin-top: 55px;
+    margin-top: 35px;
     transition: 0.5s;
 
     &-slider {
@@ -92,6 +88,11 @@
 
       &-image {
         width: 100%;
+        border-radius: 5px;
+      }
+
+      &-simple-text {
+        padding-right: 20px;
       }
 
       &-figcaption {
@@ -111,6 +112,7 @@
         @include animation (none, ease 0.2s);
         @include font (24px, bold, normal, 34px);
         letter-spacing: 2px;
+        padding-right: 20px;
 
         @include content-width-l {
           @include font (20px, bold, normal, 34px);

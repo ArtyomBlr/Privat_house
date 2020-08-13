@@ -31,14 +31,14 @@
 }
 
 .wrapper-benefits {
-  @include wrapper (1400px, 0 auto , 111px 144px 90px 161px);
+  @include wrapper (1400px, 0 auto , 60px 144px 90px 161px);
 
   @include content-width-l {
-    @include wrapper (1400px, 0 auto, 80px 80px);
+    @include wrapper (1400px, 0 auto, 60px 80px);
   }
 
   @include tablet-width {
-    @include wrapper (1400px, 0 auto, 80px 40px);
+    @include wrapper (1400px, 0 auto, 60px 40px);
   }
 
   @include mobile-width {
