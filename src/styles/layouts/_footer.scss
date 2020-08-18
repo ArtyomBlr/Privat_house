@@ -1,88 +1,29 @@
 .bottom {
-  flex-wrap: wrap-reverse;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: flex-start;
   border-top: 1px solid $color-border-opacity;
 
-  @include content-width-s {
+  &-info {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    flex-wrap: wrap;
-  }
 
-  .logo-footer {
-    margin-right: 25px;
-    order: 1;
+    &-element {
+      display: flex;
+      margin-bottom: 20px;
 
-    @include content-width-l {
-      margin-right: 0;
-    }
-
-    @include content-width-s {
-      width: 100%;
-    }
-  }
-
-  .quick-links {
-    margin: 0 0 25px 25px;
-    order: 2;
-
-    @include content-width-m {
-      width: 50%;
-      margin: 20px 0;
-      order: 3;
-    }
-
-    .content-title-middle {
-      margin-bottom: 37px;
-
-      @include content-width-m {
-        margin-bottom: 20px;
+      &-img {
+        width: 30px;
+        margin-right: 10px;
       }
     }
   }
 
-  .feedback-form {
-    max-width: 326px;
-    order: 2;
-
-    .content-title-middle {
-      @include content-width-s {
-        display: none;
-      }
-    }
-
-    @include content-width-m {
-      max-width: 50%;
-    }
-
-    @include content-width-s {
-      margin-top: 30px;
-      max-width: 100%;
-      width: 100%;
-    }
-
-    .form-button {
-      padding: 8px 17px 7px;
-
-      @include content-width-s {
-        padding: 5px 12px;
-      }
-    }
-
-    .button-ghost {
-      display: none;
-
-      @include content-width-s {
-        display: block;
-      }
-    }
-
-    .button-filled {
-      display: block;
-
-      @include content-width-s {
-        display: none;
-      }
+  &-map {
+    &-frame {
+      max-width: 600px;
+      height: 300px;
     }
   }
 }
