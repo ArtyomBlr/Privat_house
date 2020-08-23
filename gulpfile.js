@@ -1,4 +1,3 @@
-
 const gulp = require('gulp');
 
 const html = require('./gulp-tasks/html');
@@ -8,7 +7,6 @@ const clean = require('./gulp-tasks/clean');
 const images = require('./gulp-tasks/images');
 const styles = require('./gulp-tasks/styles');
 const script = require('./gulp-tasks/script');
- 
 
 const tasks = gulp.parallel(
   html,

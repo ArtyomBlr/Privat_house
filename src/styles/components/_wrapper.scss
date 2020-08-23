@@ -107,7 +107,7 @@
 }
 
 .wrapper-section-carousel {
-  @include wrapper (1400px, 0 auto, 120px 146px 120px 147px);
+  @include wrapper (1400px, 0 auto, 100px 146px 60px);
 
   @include content-width-l {
     @include wrapper (1400px, 0 auto, 90px 80px);
@@ -127,10 +127,30 @@
 }
 
 .wrapper-bottom {
-  @include wrapper (1110px, 0 auto, 100px 0 101px);
+  @include wrapper (1110px, 0 auto, 60px 0);
 
   @include content-width-l {
-    @include wrapper (1400px, 0 auto, 90px 80px);
+    @include wrapper (1400px, 0 auto, 60px 80px);
+  }
+
+  @include content-width-m {
+    @include wrapper (1400px, 0 auto, 40px 80px);
+  }
+
+  @include tablet-width {
+    @include wrapper (1400px, 0 auto, 40px 40px 30px);
+  }
+
+  @include mobile-width {
+    @include wrapper (1400px, 0 auto, 20px 20px);
+  }
+}
+
+.wrapper-section-contacts {
+  @include wrapper (1110px, 0 auto, 60px 0);
+
+  @include content-width-l {
+    @include wrapper (1400px, 0 auto, 60px 80px);
   }
 
   @include content-width-m {

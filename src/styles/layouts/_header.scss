@@ -15,27 +15,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 65%;
-
-    @include content-width-l {
-      width: 65%;
-    }
-
-    @include content-width-s {
-      flex-direction: column;
-      align-items: flex-start;
-      width: 60%;
-    }
-
-    @include tablet-width {
-      flex-direction: row;
-      align-items: center;
-      width: 45%;
-    }
-
-    @include mobile-width {
-      width: 100%;
-    }
+    width: 100%;
 
     .logo {
       @include animation (scale(1, 1), ease-in-out 0.5s);

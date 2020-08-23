@@ -18,9 +18,13 @@
   flex-wrap: wrap;
 
   &-item {
-    width: 48%;
+    width: 30%;
 
     @include tablet-width {
+      width: 47%;
+    }
+
+    @include tablet-width-half {
       width: 100%;
     }
   }
