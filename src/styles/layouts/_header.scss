@@ -1,21 +1,22 @@
 .header {
+  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 35px;
-
-  @include mobile-width {
-    flex-wrap: wrap;
-    margin-top: 20px;
-  }
+  width: 100%;
+  background: $color-pager;
+  z-index: 10;
 
   .navigation {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
     width: 100%;
+    max-width: 1120px;
+    padding: 12px 0;
 
     .logo {
       @include animation (scale(1, 1), ease-in-out 0.5s);

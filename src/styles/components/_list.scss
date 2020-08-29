@@ -11,6 +11,12 @@
     max-width: 100%;
   }
 
+  @include tablet-width {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   @include mobile-width {
     margin-top: 10px;
   }
@@ -25,8 +31,15 @@
       padding: 0 0 18px 65px;
     }
 
+    @include tablet-width {
+      padding: 5px 15px;
+      margin-right: 15px;
+      border-right: 1px solid grey;
+    }
+
     @include mobile-width {
-      padding: 0 0 12px 50px;
+      padding: 3px 5px;
+      margin-right: 10px;
     }
 
     &::before {
@@ -39,6 +52,10 @@
       border-radius: 14px;
       background: url("../images/check.svg") no-repeat center center;
       background-color: $color-brand;
+
+      @include tablet-width {
+        display: none;
+      }
     }
   }
 }
@@ -98,6 +115,14 @@
         @include animation (none, ease-in-out 0.2s);
         color: $color-brand;
       }
+    }
+
+    .sale {
+      color: red;
+    }
+
+    .active {
+      color: $color-brand;
     }
   }
 }

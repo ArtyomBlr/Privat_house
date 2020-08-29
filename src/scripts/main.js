@@ -1,4 +1,5 @@
 import { SliderModule } from './slider';
+import { scroll } from './scroll';
 
 document.addEventListener('DOMContentLoaded', () => {
   const documentWidth = document.querySelectorAll('body')[0];
@@ -7,3 +8,5 @@ document.addEventListener('DOMContentLoaded', () => {
     SliderModule.initSlider('#slider', 1, 1);
   }
 });
+
+scroll();

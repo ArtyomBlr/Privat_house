@@ -1,5 +1,5 @@
 .wrapper-header {
-  @include wrapper (1400px, 0 auto, 0 145px 0 144px);
+  @include wrapper (1920px, 0 auto, 0 145px 0 144px);
 
   @include content-width-l {
     @include wrapper (1400px, 0 auto, 0 80px);
@@ -15,34 +15,34 @@
 }
 
 .wrapper-trade-offer {
-  @include wrapper (1400px, 0 auto, 47px 129px 0 145px);
+  @include wrapper (1400px, 0 auto, 150px 129px 0 145px);
+
+  @include content-width-l {
+    @include wrapper (1400px, 0 auto, 120px 80px 0);
+  }
+
+  @include tablet-width {
+    @include wrapper (1400px, 0 auto, 110px 40px 0);
+  }
+
+  @include mobile-width {
+    @include wrapper (1400px, 0 auto, 80px 20px);
+  }
+}
+
+.wrapper-benefits {
+  @include wrapper (1400px, 0 auto , 80px 144px 0 161px);
 
   @include content-width-l {
     @include wrapper (1400px, 0 auto, 60px 80px 0);
   }
 
   @include tablet-width {
-    @include wrapper (1400px, 0 auto, 40px 40px 0);
+    @include wrapper (1400px, 0 auto, 60px 40px 0);
   }
 
   @include mobile-width {
-    @include wrapper (1400px, 0 auto, 40px 20px 0);
-  }
-}
-
-.wrapper-benefits {
-  @include wrapper (1400px, 0 auto , 60px 144px 90px 161px);
-
-  @include content-width-l {
-    @include wrapper (1400px, 0 auto, 60px 80px);
-  }
-
-  @include tablet-width {
-    @include wrapper (1400px, 0 auto, 60px 40px);
-  }
-
-  @include mobile-width {
-    @include wrapper (1400px, 0 auto, 40px 20px);
+    @include wrapper (1400px, 0 auto, 20px 20px 0);
   }
 }
 
@@ -66,7 +66,7 @@
   }
 }
 
-.wrapper-product-managers {
+.wrapper-flat {
   @include wrapper (1400px, 0 auto, 95px 135px 0 144px);
 
   @include content-width-l {
@@ -74,11 +74,11 @@
   }
 
   @include content-width-s {
-    @include wrapper (1400px, 0 auto, 20px 80px 20px);
+    @include wrapper (1400px, 0 auto, 60px 80px 20px);
   }
 
   @include tablet-width {
-    @include wrapper (1400px, 0 auto, 20px 40px);
+    @include wrapper (1400px, 0 auto, 40px 40px 0);
   }
 
   @include mobile-width {
@@ -107,38 +107,18 @@
 }
 
 .wrapper-section-carousel {
-  @include wrapper (1400px, 0 auto, 100px 146px 60px);
+  @include wrapper (1400px, 0 auto, 0 146px 60px);
 
   @include content-width-l {
-    @include wrapper (1400px, 0 auto, 90px 80px);
+    @include wrapper (1400px, 0 auto, 0 80px 20px);
   }
 
   @include content-width-m {
-    @include wrapper (1400px, 0 auto, 60px 80px);
+    @include wrapper (1400px, 0 auto, 0 80px 20px);
   }
 
   @include tablet-width {
-    @include wrapper (1400px, 0 auto, 20px 40px);
-  }
-
-  @include mobile-width {
-    @include wrapper (1400px, 0 auto, 20px 20px);
-  }
-}
-
-.wrapper-bottom {
-  @include wrapper (1110px, 0 auto, 60px 0);
-
-  @include content-width-l {
-    @include wrapper (1400px, 0 auto, 60px 80px);
-  }
-
-  @include content-width-m {
-    @include wrapper (1400px, 0 auto, 40px 80px);
-  }
-
-  @include tablet-width {
-    @include wrapper (1400px, 0 auto, 40px 40px 30px);
+    @include wrapper (1400px, 0 auto, 0 40px 20px);
   }
 
   @include mobile-width {
@@ -158,10 +138,30 @@
   }
 
   @include tablet-width {
-    @include wrapper (1400px, 0 auto, 40px 40px 20px);
+    @include wrapper (1400px, 0 auto, 10px 40px 20px);
   }
 
   @include mobile-width {
     @include wrapper (1400px, 0 auto, 20px 20px 10px);
+  }
+}
+
+.wrapper-bottom {
+  @include wrapper (1110px, 0 auto, 60px 0);
+
+  @include content-width-l {
+    @include wrapper (1400px, 0 auto, 60px 80px);
+  }
+
+  @include content-width-m {
+    @include wrapper (1400px, 0 auto, 40px 80px);
+  }
+
+  @include tablet-width {
+    @include wrapper (1400px, 0 auto, 20px 40px);
+  }
+
+  @include mobile-width {
+    @include wrapper (1400px, 0 auto, 20px 20px);
   }
 }

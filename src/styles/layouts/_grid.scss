@@ -12,6 +12,20 @@
   }
 }
 
+.grid-two-columns-plus {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include content-width-m {
+    align-items: end;
+  }
+
+  @include mobile-width {
+    flex-direction: column;
+  }
+}
+
 .grid-four-columns {
   display: flex;
   justify-content: space-between;
@@ -20,7 +34,7 @@
   &-item {
     width: 30%;
 
-    @include tablet-width {
+    @include content-width-s {
       width: 47%;
     }
 

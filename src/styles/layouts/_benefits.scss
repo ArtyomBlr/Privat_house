@@ -7,9 +7,8 @@
   }
 
   .section-title {
-    margin-bottom: 51px;
+    margin-bottom: 31px;
     width: 100%;
-    text-align: end;
 
     @include content-width-s {
       margin-bottom: 20px;
@@ -24,13 +23,15 @@
 }
 
 .benefits {
-  margin-bottom: 60px;
+  width: 80%;
+  margin: 40px auto 60px;
 
   @include tablet-width {
     margin-bottom: 45px;
   }
 
   @include mobile-width {
+    width: 100%;
     margin-bottom: 25px;
   }
 

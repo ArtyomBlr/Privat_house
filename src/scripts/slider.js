@@ -13,13 +13,7 @@ export const SliderModule = (function () {
     const itemWidth = (sliderContainer.offsetWidth + 20) / slideShow;
     const movePosition = slideStep * itemWidth;
 
-    //  How to realize this? I dont see the solution
-    // const initOptions = {
-    //   ...options,
-    // };
-
     sliderOptions = {
-      // ...initOptions,
       slideShow,
       slideStep,
       sliderContainer,

@@ -1,4 +1,4 @@
-.section-product-managers {
+.section-flat {
   @include content-width-s {
     border-top: 1px solid $color-border-opacity;
     border-bottom: 1px solid $color-border-opacity;
@@ -9,8 +9,9 @@
   }
 }
 
-.stuff-information-odd,
-.stuff-information-even {
+.grid-two-columns-plus,
+.flat-odd,
+.flat-even {
   .section-title {
     margin-bottom: 27px;
 
@@ -54,31 +55,26 @@
   }
 }
 
-.stuff-information-odd {
-  max-width: 475px;
+.flat-odd {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
   margin-top: 27px;
 
-  @include content-width-l {
-    max-width: 100%;
-    margin: 10px 60px 0 0;
-  }
-
-  @include content-width-s {
-    margin: 10px 0 0;
+  @include tablet-width {
+    flex-direction: column-reverse;
+    align-items: flex-start;
   }
 }
 
-.stuff-information-even {
-  max-width: 486px;
-  margin-top: 30px;
+.flat-even {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 27px;
 
-  @include content-width-l {
-    max-width: 100%;
-    margin: 10px 0 0 60px;
-  }
-
-  @include content-width-s {
-    margin: 10px 0 0;
+  @include tablet-width {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
-
