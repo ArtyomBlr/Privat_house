@@ -70,10 +70,6 @@
     margin-top: 35px;
     transition: 0.5s;
 
-    // @include content-width-s {
-    //   transform: translateX(-100%);
-    // }
-
     &-slider {
       flex: 0 0 34%;
 
@@ -142,7 +138,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 40px;
 
     @include tablet-width {
       margin: 25px 0 20px;

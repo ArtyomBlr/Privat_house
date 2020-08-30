@@ -1,0 +1,93 @@
+.window {
+  display: none;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  opacity: 0.99;
+  z-index: 20;
+  overflow-y: scroll;
+
+  &-modal {
+    margin: 0 auto;
+    width: 100%;
+    padding: 40px;
+    background: $color-border;
+
+    &-slider {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+      overflow: hidden;
+
+      &-item {
+        width: 32%;
+
+        @include tablet-width {
+          width: 100%;
+        }
+
+        @include mobile-small-width {
+          margin: 20px 0 0;
+        }
+      }
+    }
+
+    .simple-text {
+      margin: 20px 0;
+    }
+
+    &-swiper-buttons {
+      display: none;
+
+      @include tablet-width {
+        position: relative;
+        top: -275px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      @include tablet-width-half {
+        top: -200px;
+      }
+
+      @include mobile-width {
+        top: -160px;
+      }
+
+      @include mobile-small-width {
+        top: -140px;
+      }
+
+      &-prev {
+        background: url("../../images/previous.svg") no-repeat no-repeat;
+        background-size: contain;
+        background-position: center center;
+      }
+
+      &-next {
+        background: url("../../images/next.svg") no-repeat no-repeat;
+        background-size: contain;
+        background-position: center center;
+      }
+
+      &-prev,
+      &-next {
+        display: flex;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        z-index: 1;
+
+        @include tablet-width {
+          width: 35px;
+        }
+
+        &:hover {
+          background-color: $color-border-opacity;
+        }
+      }
+    }
+  }
+}

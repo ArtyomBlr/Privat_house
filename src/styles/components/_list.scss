@@ -1,7 +1,7 @@
 .manager-list {
   @include font (16px, 500, normal, 26px);
-  margin-top: 55px;
-  max-width: 435px;
+  column-count: 3;
+  margin: 55px 0;
 
   @include content-width-m {
     margin-top: 30px;
@@ -12,34 +12,21 @@
   }
 
   @include tablet-width {
-    max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  @include mobile-width {
-    margin-top: 10px;
+    column-count: 1;
   }
 
   &-item {
     display: flex;
     align-items: center;
     position: relative;
-    padding: 0 0 30px 65px;
+    padding: 0 0 0 65px;
 
     @include content-width-m {
-      padding: 0 0 18px 65px;
-    }
-
-    @include tablet-width {
-      padding: 5px 15px;
-      margin-right: 15px;
-      border-right: 1px solid grey;
+      padding: 0 0 0 65px;
     }
 
     @include mobile-width {
-      padding: 3px 5px;
-      margin-right: 10px;
+      padding: 0 0 0 30px;
     }
 
     &::before {
@@ -47,15 +34,11 @@
       display: block;
       position: absolute;
       left: 0;
-      width: 35px;
-      height: 35px;
-      border-radius: 14px;
+      width: 20px;
+      height: 20px;
+      border-radius: 7px;
       background: url("../images/check.svg") no-repeat center center;
       background-color: $color-brand;
-
-      @include tablet-width {
-        display: none;
-      }
     }
   }
 }

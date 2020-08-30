@@ -1,5 +1,6 @@
 import { SliderModule } from './slider';
 import { scroll } from './scroll';
+import { openModalWindow } from './modal';
 
 document.addEventListener('DOMContentLoaded', () => {
   const documentWidth = document.querySelectorAll('body')[0];
@@ -10,3 +11,4 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 scroll();
+openModalWindow();
