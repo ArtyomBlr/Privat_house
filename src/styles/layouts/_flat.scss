@@ -72,21 +72,77 @@
     width: 100%;
   }
 
-  &-icon {
-    width: 50px;
-  }
-
   &-icons {
     width: 135px;
     display: flex;
 
     &-icon {
       width: 40px;
+      height: 40px;
       margin-right: 5px;
     }
 
     &-icon-plus {
       width: 50px;
     }
+  }
+
+  &-contacts {
+    display: flex;
+    justify-content: space-between;
+
+    @include content-width-m {
+      flex-wrap: wrap;
+    }
+
+    @include content-width-s {
+      margin: 0 auto;
+      width: 80%;
+    }
+
+    @include tablet-width-half {
+      width: 100%;
+    }
+
+    &-element {
+      display: flex;
+      align-items: end;
+      width: 24%;
+      margin-bottom: 20px;
+      margin-right: 20px;
+
+      @include content-width-m {
+        width: 40%;
+      }
+
+      @include tablet-width-half {
+        width: 100%;
+      }
+
+      &-img {
+        width: 30px;
+        margin-right: 20px;
+      }
+
+      &-link {
+        &:hover {
+          color: $color-text;
+        }
+      }
+    }
+  }
+}
+
+.flat-title {
+  margin: 40px 0;
+  text-align: left;
+
+  @include content-width-s {
+    margin: 20px auto;
+    width: 80%;
+  }
+
+  @include tablet-width-half {
+    width: 100%;
   }
 }

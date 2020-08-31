@@ -3,8 +3,6 @@ export function openModalWindow() {
   const modalWindowTwo = document.getElementById('modal-window-two');
   const modalWindowThree = document.getElementById('modal-window-three');
 
-  // const buttonClose = document.getElementsByClassName('button-close')[0];
-
   document.addEventListener('click', openWindow);
 
   function openWindow(event) {
@@ -18,12 +16,17 @@ export function openModalWindow() {
       case 'button-three':
         modalWindowThree.style.display = 'block';
         break;
+      case 'button-close-one':
+        modalWindowOne.style.display = 'none';
+        break;
+      case 'button-close-two':
+        modalWindowTwo.style.display = 'none';
+        break;
+      case 'button-close-three':
+        modalWindowThree.style.display = 'none';
+        break;
       default:
         break;
-    }
-
-    if (event.target.className === 'button-close') {
-      console.log(1);
     }
   }
 }

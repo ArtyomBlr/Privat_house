@@ -11,13 +11,17 @@
     margin: 0 auto;
     width: 100%;
     padding: 40px;
-    background: $color-border;
+    background: $color-pager;
 
     &-slider {
       display: flex;
       justify-content: space-between;
       margin: 20px 0;
       overflow: hidden;
+
+      @include mobile-width {
+        margin: 20px 0 -30px;
+      }
 
       &-item {
         width: 32%;
@@ -52,11 +56,11 @@
       }
 
       @include mobile-width {
-        top: -160px;
+        top: -120px;
       }
 
       @include mobile-small-width {
-        top: -140px;
+        top: -80px;
       }
 
       &-prev {
