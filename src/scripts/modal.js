@@ -8,22 +8,22 @@ export function openModalWindow() {
   function openWindow(event) {
     switch (event.target.id) {
       case 'button-one':
-        modalWindowOne.style.display = 'block';
+        modalWindowOne.style.height = '100vh';
         break;
       case 'button-two':
-        modalWindowTwo.style.display = 'block';
+        modalWindowTwo.style.height = '100vh';
         break;
       case 'button-three':
-        modalWindowThree.style.display = 'block';
+        modalWindowThree.style.height = '100vh';
         break;
       case 'button-close-one':
-        modalWindowOne.style.display = 'none';
+        modalWindowOne.style.height = '0';
         break;
       case 'button-close-two':
-        modalWindowTwo.style.display = 'none';
+        modalWindowTwo.style.height = '0';
         break;
       case 'button-close-three':
-        modalWindowThree.style.display = 'none';
+        modalWindowThree.style.height = '0';
         break;
       default:
         break;

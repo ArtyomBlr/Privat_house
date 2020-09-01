@@ -24,15 +24,15 @@
 
 .benefits {
   width: 100%;
-  margin: 40px auto 60px;
+  margin: 40px auto 0;
 
   @include tablet-width {
-    margin-bottom: 45px;
+    margin-bottom: 0;
   }
 
   @include mobile-width {
+    margin: 10px auto 0;
     width: 100%;
-    margin-bottom: 10px;
   }
 
   &-element {

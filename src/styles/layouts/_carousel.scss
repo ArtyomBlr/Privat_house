@@ -72,6 +72,7 @@
 
     &-slider {
       flex: 0 0 34%;
+      animation: 0.5s ease-in-out;
 
       &-figure {
         padding-right: 20px;
@@ -83,7 +84,6 @@
 
       @include content-width-s {
         flex: 0 0 100%;
-        margin-right: 20px;
       }
 
       &-image {
@@ -139,7 +139,7 @@
     flex-direction: row;
     justify-content: center;
 
-    @include tablet-width {
+    @include content-width-s {
       margin: 25px 0 20px;
     }
 
@@ -171,4 +171,3 @@
     }
   }
 }
-

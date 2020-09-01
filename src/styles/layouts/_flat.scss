@@ -65,7 +65,7 @@
   @include content-width-s {
     margin: 20px auto;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
   }
 
   @include tablet-width-half {
@@ -97,7 +97,7 @@
 
     @include content-width-s {
       margin: 0 auto;
-      width: 80%;
+      width: 100%;
     }
 
     @include tablet-width-half {
@@ -139,7 +139,7 @@
 
   @include content-width-s {
     margin: 20px auto;
-    width: 80%;
+    width: 100%;
   }
 
   @include tablet-width-half {

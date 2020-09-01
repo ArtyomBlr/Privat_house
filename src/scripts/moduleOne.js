@@ -1,11 +1,9 @@
-export const SliderModule = (function () {
+export const SliderModuleForModalWindow = (function () {
   const defaultModuleOptions = {
-    sliderTrackSelector: '.carousel',
-    prevButtonSelector: '.carousel-swiper-buttons-prev',
-    nextButtonSelector: '.carousel-swiper-buttons-next',
-    sliderTrackItemSelector: '.carousel-slider',
-    slidesToShow: 1,
-    sliderToScroll: 1,
+    sliderTrackSelector: '.window-modal-slider',
+    sliderTrackItemSelector: '.window-modal-slider-item',
+    slidesToShow: 0,
+    sliderToScroll: 0,
   };
 
   let moduleOptions;
@@ -13,7 +11,7 @@ export const SliderModule = (function () {
   let sliderContainer;
   let sliderTrack;
 
-  function initSlider(sliderId, options) {
+  function initSlider(sliderId, bttnPrev, bttnNext, options) {
     moduleOptions = {
       ...defaultModuleOptions,
       ...options,
@@ -24,12 +22,9 @@ export const SliderModule = (function () {
       moduleOptions.sliderTrackSelector,
     );
 
-    const btnPrev = sliderContainer.querySelector(
-      moduleOptions.prevButtonSelector,
-    );
-    const btnNext = sliderContainer.querySelector(
-      moduleOptions.nextButtonSelector,
-    );
+    const btnPrev = document.getElementById(`${bttnPrev}`);
+    const btnNext = document.getElementById(`${bttnNext}`);
+
     const items = sliderContainer.querySelectorAll(
       moduleOptions.sliderTrackItemSelector,
     );
@@ -38,7 +33,7 @@ export const SliderModule = (function () {
     const slidesToScroll = moduleOptions.slidesToScroll || moduleOptions.slidesToScroll;
     const slidesToShow = moduleOptions.slidesToShow || moduleOptions.slidesToShow;
     const itemWidth = sliderContainer.clientWidth / slidesToShow;
-    const movePosition = slidesToScroll * itemWidth;
+    const movePosition = slidesToScroll * itemWidth + 40;
 
     items.forEach((item) => {
       item.style.minWidth = `${itemWidth}px`;
@@ -53,7 +48,7 @@ export const SliderModule = (function () {
 
     btnNext.addEventListener('click', () => {
       const itemsLeft = itemsCount - (Math.abs(position) + slidesToShow * itemWidth) / itemWidth;
-      position -= itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
+      position -= itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth + 80;
       setPosition(position);
       checkBtns();
     });

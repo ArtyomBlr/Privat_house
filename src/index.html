@@ -18,17 +18,19 @@
             <input type="checkbox" name="toggle" id="menu" class="toggle-menu" /> 
             <label for="menu" class="navigation-menu-burger"><span class="navigation-menu-burger-line"></span></label>
             <ul class="navigation-list">
+              <li class="navigation-list-item"><a href="#home" class="navigation-list-item-link">Главная</a></li>
               <li class="navigation-list-item"><a href="#benefits" class="navigation-list-item-link">Услуги</a></li>
               <li class="navigation-list-item"><a href="#numbers" class="navigation-list-item-link">Номера</a></li>
-              <li class="navigation-list-item"><a href="#bonuses" class="navigation-list-item-link sale">Акции</a></li>
+              <li class="navigation-list-item"><a href="#bonuses" class="navigation-list-item-link">Акции</a></li>
               <li class="navigation-list-item"><a href="#contacts" class="navigation-list-item-link">Контакты</a></li>
             </ul>
           </div>
         </div>
         <ul class="navigation-list">
+          <li class="navigation-list-item"><a href="#home" class="navigation-list-item-link">Главная</a></li>
           <li class="navigation-list-item"><a href="#benefits" class="navigation-list-item-link">Услуги</a></li>
           <li class="navigation-list-item"><a href="#numbers" class="navigation-list-item-link">Номера</a></li>
-          <li class="navigation-list-item sale"><a href="#bonuses" class="navigation-list-item-link sale">Акции</a></li>
+          <li class="navigation-list-item sale"><a href="#bonuses" class="navigation-list-item-link">Акции</a></li>
           <li class="navigation-list-item"><a href="#contacts" class="navigation-list-item-link">Контакты</a></li>
         </ul>  
       </nav>
@@ -89,12 +91,12 @@
 
       <section id="numbers" class="grid-two-columns-plus wrapper-flat">
         <h2 class="section-title">Доступные номера</h2>
-        <p class="simple-text simple-text-higher">Вам предоставляются номера с современной мебелью, wi-fi, кондиционером, сейфом. Также в вашем распоряжении небольшая терраса с видом на лес.</p>
+        <p class="simple-text simple-text-higher">Вам предоставляются номера с современной мебелью, wi-fi, кондиционером, сейфом. Также в вашем распоряжении восхитительные виды и пейзажи.</p>
         <article class="flat-odd">
           <div class="flat-odd-icons">
             <img src="./images/bed.svg" alt="single bed" class="flat-odd-icons-icon-plus" />
           </div>
-          <p class="simple-text">Двухместный номер с одной двуспальной кроватью - 35$</p>
+          <p class="simple-text">Двухместный номер с одной двуспальной кроватью - 30$</p>
           <button class="button button-filled" id="button-one">Просмотр</button>
         </article>
         <article class="flat-odd">
@@ -102,7 +104,7 @@
             <img src="./images/singlebed.svg" alt="single bed" class="flat-odd-icons-icon" />
             <img src="./images/singlebed.svg" alt="single bed" class="flat-odd-icons-icon" />
           </div>
-          <p class="simple-text">Двухместный номер с двумя полутороспальными кроватью - 30$</p>
+          <p class="simple-text">Двухместный номер с двумя полутороспальными кроватью - 35$</p>
           <button class="button button-filled" id="button-two">Просмотр</button>
         </article>
         <article class="flat-odd">
@@ -140,16 +142,18 @@
       <div class="window" id="modal-window-one">
         <div class="window-modal">
           <h3 class="content-title">Двухместный номер с одной двуспальной кроватью</h3>
-          <div class="window-modal-slider">
-            <img src="./images/bed13.jpg" alt="bed" class="window-modal-slider-item" />
-            <img src="./images/bed11.jpg" alt="bed" class="window-modal-slider-item" />
-            <img src="./images/bed12.jpg" alt="bed" class="window-modal-slider-item" />
+          <div id="modal">
+            <ul class="window-modal-slider" id="modal-slider">
+              <li class="window-modal-slider-item"><img src="./images/bed13.jpg" alt="bed" class="window-modal-slider-item-img" /></li>
+              <li class="window-modal-slider-item"><img src="./images/bed11.jpg" alt="bed" class="window-modal-slider-item-img" /></li>
+              <li class="window-modal-slider-item"><img src="./images/bed12.jpg" alt="bed" class="window-modal-slider-item-img" /></li>
+            </ul>  
           </div>
 
           <div class="window-modal-swiper-buttons">
-            <button class="window-modal-swiper-buttons-prev"></button>
-            <button class="window-modal-swiper-buttons-next"></button>
-          </div>
+            <button class="window-modal-swiper-buttons-prev" id="button-one-prev"></button>
+            <button class="window-modal-swiper-buttons-next" id="button-one-next"></button>
+          </div>     
 
           <h4 class="content-title">Размер номера 20 m&sup2;</h4>
           <p class="simple-text">Двухместный номера с двуспальной кроватью. Также в вашем распоряжении небольшая терраса с видом на лес.</p>
@@ -173,16 +177,17 @@
       <div class="window" id="modal-window-two">
         <div class="window-modal">
           <h3 class="content-title">Двухместный номер с двумя полутороспальными кроватями</h3>
-          <div class="window-modal-slider">
-            <img src="./images/bed23.jpg" alt="bed" class="window-modal-slider-item" />
-            <img src="./images/bed22.jpg" alt="bed" class="window-modal-slider-item" />
-            <img src="./images/bed21.jpg" alt="bed" class="window-modal-slider-item" />
+          <div id="modal-two">
+            <ul class="window-modal-slider">
+              <li class="window-modal-slider-item"><img src="./images/bed23.jpg" alt="bed" class="window-modal-slider-item-img" /></li>
+              <li class="window-modal-slider-item"><img src="./images/bed22.jpg" alt="bed" class="window-modal-slider-item-img" /></li>
+              <li class="window-modal-slider-item"><img src="./images/bed21.jpg" alt="bed" class="window-modal-slider-item-img" /></li>
+            </ul>  
           </div>
-
           <div class="window-modal-swiper-buttons">
-            <button class="window-modal-swiper-buttons-prev"></button>
-            <button class="window-modal-swiper-buttons-next"></button>
-          </div>
+            <button class="window-modal-swiper-buttons-prev" id="button-two-prev"></button>
+            <button class="window-modal-swiper-buttons-next" id="button-two-next"></button>
+          </div> 
 
           <h4 class="content-title">Размер номера 26 m&sup2;</h4>
           <p class="simple-text">Двухместный номер с двумя полутороспальными кроватями, с видом на лес</p>
@@ -206,15 +211,18 @@
       <div class="window" id="modal-window-three">
         <div class="window-modal">
           <h3 class="content-title">Трехместный номер с тремя полутороспальными кроватями</h3>
-          <div class="window-modal-slider">
-            <img src="./images/bed31.jpg" alt="bed" class="window-modal-slider-item" />
-            <img src="./images/bed32.jpg" alt="bed" class="window-modal-slider-item" />
-            <img src="./images/bed33.jpg" alt="bed" class="window-modal-slider-item" />
+          
+          <div id="modal-three">
+            <ul class="window-modal-slider">
+              <li class="window-modal-slider-item"><img src="./images/bed31.jpg" alt="bed" class="window-modal-slider-item-img" /></li>
+              <li class="window-modal-slider-item"><img src="./images/bed32.jpg" alt="bed" class="window-modal-slider-item-img" /></li>
+              <li class="window-modal-slider-item"><img src="./images/bed33.jpg" alt="bed" class="window-modal-slider-item-img" /></li>
+            </ul>  
           </div>
 
           <div class="window-modal-swiper-buttons">
-            <button class="window-modal-swiper-buttons-prev"></button>
-            <button class="window-modal-swiper-buttons-next"></button>
+            <button class="window-modal-swiper-buttons-prev" id="button-three-prev"></button>
+            <button class="window-modal-swiper-buttons-next" id="button-three-next"></button>
           </div>
 
           <h4 class="content-title">Размер номера 32 m&sup2;</h4>
